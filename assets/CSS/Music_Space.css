@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    color: #fff;                 
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #280326; 
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fffdff;
+    margin-top: -7%;
+}
+
+nav {
+    text-align: center;
+    margin-top: 1px;
+}
+
+nav form {
+    display: inline-block;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+nav button {
+    padding: 8px 15px;
+    background-color: #110804;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: #a9aa93;
+}
+
+.sidebar {
+    background-color: #170316b2;
+    width: 200px;
+    position: fixed;
+    left: -200px;
+    top: 80px;
+    height: 100%;
+    overflow: auto;
+    transition:  left 0.3s ease;
+}
+.sidebar.active {
+    left: 0; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.sidebar a:hover {
+    background-color: #333;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.btn-submit{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-submit{
+    color: white;
+    background-color: rgb(19, 19, 187);
+}
+.btn-submit:hover{
+    background: rgb(42, 19, 156);
+}
+.btn-reset{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-reset{
+    color: white;
+    background-color: rgb(172, 16, 16);
+}
+.btn-reset:hover{
+    background: rgb(42, 19, 156);
+}
+.contact-form{
+    bkground-color: #10013d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 1);
+    width: 400px;
+    box-sizing: boacrder-box;
+    border: #FFFFFF;
+    margin-left: 37%;
+}
+.contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:#FFFFFF;
+    text-align: center;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.intro {
+
+    background-color: rgb(9, 62, 33);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
+
+    text-align: center;
+margin-right: 190px;
+    color: var(--text-color);
+    border-radius: 15px;
+
+}
+.intro-btn{
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    border-color: blueviolet;
+    box-shadow: 0 0 10px #050218;
+    padding: 1%;
+}
+.intro-btn a{
+    text-decoration: none;
+}
+.intro-btn:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    transition: transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.intro h1 {
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.intro p {
+
+    font-size: 18px;
+
+    margin-bottom:10px;
+}
+
+
+
+
+
+.container {
+    display:inline;
+    flex-wrap: wrap;
+    gap:10px;
+    padding:10px;
+    align-content: center;
+    text-align: center;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+    }
+    img:hover{
+        transform: scale(1.1);
+        filter: brightness(1.2);
+        transition: transform 0.5s ease,
+        filter 0.5s ease;
+    }
+
+
+
+    main {
+        padding: 2em;
+    }
+    main div img {
+        border-radius: 20px;
+    }
+    
+    main div p {
+        color: #fffdff;
+        margin-right: 190px;
+    }
+
+
+    h1, h2 {
+        margin: 0.5em 0;
+    }
+    
+    .albums, .tracks {
+        margin-bottom: 2em;
+    }
+    
+    .album-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .album {
+        background-color: rgb(25, 8, 31);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 1em;
+        transition: transform 0.3s;
+    }
+    
+    .album img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .album p {
+        text-align: center;
+        margin: 0.5em 0 0;
+        color: #ffffff;
+    }
+    
+    .album:hover {
+        transform: scale(1.05);
+    }
+    
+    .social-icons{
+        margin-top: 0;
+    }
+    .social-icons a{
+        display: inline-block;
+        margin: 0 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .social-icons a :hover{
+        transform:scale(1.2);
+    }
+    .social-icons img{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .track-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .track {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 1em;
+        transition: background-color 0.3s;
+    }
+    
+    .track p {
+        margin: 0;
+    }
+    
+    .track audio {
+        width: 100%;
+        margin-top: 0.5em;
+    }
+    
+    .track:hover {
+        background-color: #e0e0e0;
+    }
+
+    .logo-slide img{
+        display: inline;
+        animation: slide 15s linear infinite;
+        flex-shrink: 0;
+    }
+    footer {
+        background-color: #280326;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        bottom: 0;
+    }
+
+
+
+    .main {
+        padding: 20px;
+    }
+    
+    .artiste {
+        text-align: center;
+        margin: 20px;
+        display: inline-block;
+    }
+    
+    .artiste img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Pour arrondir les coins */
+        border: 5px solid #fff; /* Bordure blanche de 5px */
+        transition: transform 0.3s ease-in-out; /* Animation de transition */
+    }
+    
+    .artiste p {
+        margin-top: 10px;
+        font-weight: bold;
+    
+    }
+    
+    .artiste:hover img {
+        transform: scale(1.1); /* Effet agrandissement au survol */
+        border-color: #ff8c00; /* Changement de couleur de bordure */
+    }
+
+
+
+
+
+
+
+ @keyframes slide {
+     0%{
+            transform: translateX(100%);
+        }
+    100% {
+            transform:translateX(-100%);
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

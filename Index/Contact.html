@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="Music_Space(logo).jpeg">
+    <link rel="stylesheet" href="Music_Space.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img id="sidebarToggle" &#9776; src="Music_Space(logo).jpeg" width="75px" height="75px" alt="Music_Space(logo)">
+            <br/>
+            <h1>Music_Space</h1>
+            <nav>
+                <form action="#" method="GET">
+                    <input type="text" placeholder="Rechercher...">
+                    <button type="submit">Rechercher</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="Music_Space.html" >Accueil</a></li>
+            <li><a href="Artiste.html">Artistes</a></li>
+            <li><a href="genres.html">Genres</a></li>
+            <li><a href="#Contact.html"class="active">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main >
+        <div class="contact-form">
+            <h1>Contactez-nous !</h1>
+            <form method="POST" action="">
+                <div>
+                    <label>Prenom</label>
+                    <input type="text" id="prenom" name="prenom"/>
+                </div>
+                <br/>
+                <div>
+                    <label>Nom</label>
+                    <input type="text" id="nom" name="nom"/>
+
+                </div>
+                <br/>
+                <div>
+                        <label>Date de naissance</label>
+                        <input type="date" id="datenaisse" name="datenaisse" />
+                        
+                </div>
+                <br/>
+                <div>
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com"/>
+                </div>
+                <br/>
+                
+                <div>
+                    <label>Sexe:</label>
+                    <input type="radio" id="Sexe Masculin" name="Sexe" value="Masculin"/>
+                    <label font-size="12px">Masculin</label>   
+                    <input type="radio" id="Sexe Feminin" name="Sexe" value="Feminin"/>
+                    <label font-size="12px">Feminin</label>
+                </div>
+                <br/>
+                <div>
+                    <label>Votre Message</label>
+                    <textarea name="Message" id="Message" cols="20" rows="4"></textarea>
+                </div>
+                <br/>
+                <button class="btn-submit" type="submit">Envoyer</button>
+                <button class="btn-reset" type="reset">annuler</button>
+            </form>
+        </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <footer>
+        <h2> <i>MUSIC SPACE</i></h2>
+        <h3><u>Nos liens:</u></h3>
+                 <div class="social-icons">
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/&ved=2ahUKEwil37TNn9SGAxXSBNsEHbH9CKQQFnoECAYQAQ&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm"><img src="iconeInstagram.svg" alt="Instagram"></a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/%3Flang%3Dfr&ved=2ahUKEwjJhPiinNSGAxU9RvEDHaQ0BlkQFnoECBQQAQ&usg=AOvVaw1FOcBmphgVAnEWKC7eSXn_"><img src="iconX.svg" alt="X"></a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tiktok.com/discover%3Flang%3Dfr&ved=2ahUKEwiFxezbnNSGAxWbcvEDHUL6A_sQFnoECBkQAQ&usg=AOvVaw1QlbamcIGDdDHVgKxZdKiU"><img src="icontiktok.svg" alt="TikTok"></a>
+                    <a href=""><img src="iconthreads.svg" alt="Threads"></a>
+                    <a href=""><img src="iconpinterest.svg" alt="Pinterest"></a>
+                  </div>
+        <div class="container">
+            <p>&copy; 2024 Music_Space. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="Music_Space_script.js"></script>
+</body>
+</html>
